@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  --color1: rgb(188, 20, 20);
+  --color1: rgb(12, 158, 194);
+  --color1: rgb(188, 185, 20);
+}
+.grid {
+  border: 1px solid cyan;
+}
+.img {
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 5px, 0.4);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+form {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "i1 i2"
+    "ta ta"
+    "v1 bt";
+}
+input,
+textarea {
+  margin: 10px;
+  padding: 10px;
+}
+textarea {
+  grid-area: ta;
+  height: 40px;
+  resize: none;
+}
+#btn {
+  grid-area: bt;
+  background-color: cyan;
+}
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: dodgerblue;
+  position: absolute;
+  top: 0px;
+  right:0px
+}
+.para{
+    text-align: center;
+    margin-top: 25px;
+}
